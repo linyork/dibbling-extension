@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "dibbling-extension",
+  "version": "1.0.0",
+  "description": "點播系統的插件",
+  "icons":
+  {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "background":
+  {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action":
+  {
+    "default_icon": "favicon.ico",
+    "default_title": "點播系統的插件",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":
+  [
+    {
+      "js": ["jquery-3.5.1.min.js", "button.js"],
+      "matches": ["http://www.youtube.com/watch*", "https://www.youtube.com/watch*","https://local.dibbling.tw/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions":
+  [
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "https://local.dibbling.tw/*"
+  ]
+}
