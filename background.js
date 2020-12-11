@@ -10,9 +10,14 @@ function getCookies(domain, name, callback) {
 }
 
 // test
-getCookies("https://local.dibbling.tw/dibbling", "dibbling_session", function(dibbling_session) {
-    dibbling_api_token = dibbling_session
+getCookies("https://local.dibbling.tw", "dibbling_session", function(dibbling_session) {
+    dibbling_api_token = dibbling_session;
     console.log(dibbling_api_token);
-});
 
+    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    //     chrome.tabs.sendMessage(tabs[1].id, {greeting: "hello"}, function(response) {
+    //         console.log(response.farewell);
+    //     });
+    // });
+});
 console.log('g2');
