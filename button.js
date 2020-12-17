@@ -15,7 +15,7 @@
         // console.log(sender.tab ? 'from a content script:' + sender.tab.url : 'from the extension');
         if (request.greeting ==='sendToken') {
             let promise_post_list = $.ajax({
-                url: 'https://local.dibbling.tw/api/v2/list/extension',
+                url: 'https://music.core-tech.tw/api/v2/list/extension',
                 headers: {
                     'Authorization': 'Bearer ' + request.token,
                 },
