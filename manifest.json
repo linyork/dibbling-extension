@@ -5,9 +5,9 @@
   "description": "點播系統的插件",
   "icons":
   {
-    "16": "favicon.ico",
-    "48": "favicon.ico",
-    "128": "favicon.ico"
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "background":
   {
