@@ -4,6 +4,7 @@
         if (e['status'] === false) {
             alert(e.msg);
         }
+        console.log(e);
     }
 
     function FailMethod(e) {
@@ -14,6 +15,9 @@
     function dibbling() {
         let promise_post_list = $.ajax({
             url: 'https://local.dibbling.tw/api/v2/list/extension',
+            headers: {
+                'Authorization': 'Bearer {token}',
+            },
             method: "POST",
             dataType: "json",
             data: {

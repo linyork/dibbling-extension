@@ -10,8 +10,8 @@ function getCookies(domain, name, callback) {
 }
 
 // test
-getCookies("https://local.dibbling.tw", "dibbling_session", function(dibbling_session) {
-    dibbling_api_token = dibbling_session;
+getCookies("https://local.dibbling.tw", "dibbling_token", function(dibbling_token) {
+    dibbling_api_token = dibbling_token;
     console.log(dibbling_api_token);
 
     // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
