@@ -1,5 +1,4 @@
 (function() {
-    console.log('b1');
     function SuccessMethod(e) {
         if (e['status'] === false) {
             alert(e.msg);
@@ -28,7 +27,6 @@
         promise_post_list.fail(FailMethod);
     }
 
-    let dibbling_api_token;
     setTimeout(function () {
         let dibbling_button = document.createElement('paper-button');
         dibbling_button.className = 'ytd-subscribe-button-renderer';
@@ -37,6 +35,4 @@
         document.querySelector('#meta-contents #container #top-row').append(dibbling_button);
         document.getElementById('dibbling_extension_button').addEventListener("click", dibbling);
     }, 2000);
-
-    console.log('b2');
 })();
