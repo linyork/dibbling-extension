@@ -24,7 +24,7 @@
   [
     {
       "js": ["jquery-3.5.1.min.js", "button.js"],
-      "matches": ["http://www.youtube.com/watch*", "https://www.youtube.com/watch*","https://local.dibbling.tw/*"],
+      "matches": ["http://www.youtube.com/watch*", "https://www.youtube.com/watch*","https://music.core-tech.tw/*"],
       "run_at": "document_idle"
     }
   ],
@@ -33,6 +33,6 @@
     "webRequest",
     "webRequestBlocking",
     "cookies",
-    "https://local.dibbling.tw/*"
+    "https://music.core-tech.tw/*"
   ]
 }
